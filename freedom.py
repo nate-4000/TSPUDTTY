@@ -1,4 +1,5 @@
 import intro
+from intro import command
 import random
 pprint = intro.pprint
 command = intro.command
@@ -29,7 +30,7 @@ def hallway0():
 2. Try to open door 430, with a crowbar
 3. Go into the next room
 """)
-    stdin = int(input("> "))
+    stdin = command("> ", 3)
     if stdin == 1:
         pprint("""
 [There is an open window near the desk you climbed on. It is big enough for you to fit.]
@@ -38,7 +39,7 @@ Do you:
 1. Get off the desk
 2. Climb out the window
 """)
-        stdin = int(input("> "))
+        stdin = command("> ", 2)
         if stdin == 2:
             import windowending
             windowending.ending()
@@ -58,14 +59,14 @@ Do you:
 1. Go into the next room
 2. Do nothing, then go into the next room
 """)
-    stdin = int(input("> "))
+    stdin = command("> ", 2)
     pprint("""
 [This is a small hallway. Nothing to do here.]
 Do you:
 1. Go into the next room
 2. Stare longingly at Employee 417's office
 """)
-    stdin = int(input("> "))
+    stdin = command("> ", 2)
     if stdin == 2:
         pprint("""
 Stanley, it's just another desk and monitor. Nothing special.
@@ -79,10 +80,13 @@ Do you:
 1. Go through the left door
 2. Go through the right door
 """)
-    stdin = int(input("> "))
+    stdin = command("> ", 2))
     if stdin == 1:
         import leftdoor
         leftdoor.hallway1()
     if stdin == 2:
         import rightdoor
         rightdoor.hallway1()
+
+if __name__ == "__main__":
+    import serious

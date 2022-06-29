@@ -1,11 +1,17 @@
 from intro import pprint
+from intro import command
 slides = [
 "How To Not Get Fired",
 "Boss Appreciation Minute",
 "Why The Projector Is Always Running",
 "How Not To Save Power",
 "How To Eat A Sandwich",
-"Are We In A Simulation: The Proof"
+"Are We In A Simulation: The Proof",
+"What Do You Do With A Drunken Sailor",
+"Why The Office Is Mostly Hallway",
+"Allergies: Why?",
+"I Ate A Sandwich Today And It Was Delicious",
+"How To Bring Up Your Electric Bill"
 ]
 import random
 def hallway1():
@@ -19,7 +25,7 @@ Do you:
 1. Look at the projector screen
 2. Go into the next room
 """)
-    stdin = int(input("> "))
+    stdin = command("> ", 2)
     if stdin == 1:
         import time
         pprint("""
@@ -31,7 +37,7 @@ Do you:
 1. Go in the broom closet
 2. Go into the next room
 """)
-    stdin = int(input("> "))
+    stdin = command("> ", 2)
     pprint("""
 This path has not been finished yet. Please choose a different ending next time.
 
@@ -40,3 +46,6 @@ This path has not been finished yet. Please choose a different ending next time.
     input()
     import sys
     sys.exit(0)
+
+if __name__ == "__main__":
+    import serious

@@ -4,9 +4,16 @@ def pprint(st: int, u: int = 0.07):
     for i in t:
         print(i, end="", flush=True)
         time.sleep(u)
-def command():
-    global stdin
-    stdin = int(input("> "))
+def command(prompt:str, max:int) -> int:
+    while True:
+        try:
+            res = int(input(prompt))
+        except ValueError:
+            print("Please enter an integer")
+        if not (1<=res<=max):
+            print(f"Please enter an integer from 1 to {max}")
+        else:
+            return res
 def intro():
     pprint("""
 This is the story of a man named Stanley.
@@ -35,7 +42,7 @@ Do you:
 1. Listen to the narrator
 2. Close the office door and hide under the desk
 """)
-    command()
+    stdin = command("> ", 2)
     if stdin == 2:
         pprint("""Ah. I see.
 You want this to be over.
@@ -58,3 +65,6 @@ Here goes....
         freedom.hallway0()
     import freedom
     freedom.hallway0()
+
+if __name__ == "__main__":
+    import serious

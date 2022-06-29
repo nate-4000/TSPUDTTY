@@ -8,4 +8,4 @@ Ever have that problem where you want to play The Stanley Parable but:
 
 Worry not! I have the solution.
 Just download Python, and run main.py!
-Or, you can be lazy and grab the latest release.
+

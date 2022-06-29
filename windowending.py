@@ -26,3 +26,6 @@ Okay, I'm over it. Here's the "end" part of your ending.
 """)
     input()
     sys.exit(None)
+
+if __name__ == "__main__":
+    import serious

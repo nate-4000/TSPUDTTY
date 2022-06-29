@@ -8,3 +8,6 @@ This path has not been completed yet. Please choose a different ending next time
 """)
     input()
     sys.exit(0)
+
+if __name__ == "__main__":
+    import serious
