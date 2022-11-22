@@ -12,7 +12,7 @@ Do you:
 """)
     time.sleep(3)
     pprint("""
-At first, Stanley assumed he had broken the map, until he heard this narration and realized it was a part of the game's design all along.
+At first, Stanley assumed he had broken the text adventure, until he saw this narration and realized it was a part of the game's design all along.
 He then praised the game for its insightful and witty commentary into the nature of video game structure and its examination of structural narrative tropes.
 
 So now that you're here, what do you think? Isn't this a fun and unique place to be?

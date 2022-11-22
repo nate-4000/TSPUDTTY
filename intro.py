@@ -44,25 +44,31 @@ Do you:
 """)
     stdin = command("> ", 2)
     if stdin == 2:
-        pprint("""Ah. I see.
-You want this to be over.
-Well guess what, Stanley?
-You are stuck here now!
-I forgot to make the door handle function, because you were supposed to exit your room!
-Now you will never know what awaited you! I had a whole story planned out for you and what do you do?
-Hide under the desk?
-Is that what you think of my story?
-You don't like it so much you will hide under your desk just to stop it before it even starts?
-Is that what you think, Stanley?
-Well I don't know what to do here, Stanley. 
-Just let you sit here forever, when there is a whole world of possibility out of that door?
-Well I'm not going to have that kind of thing happen on my watch.
-I'm going to teleport you outside of the room, and we can get on with the story.
-See? I'm a forgiving man.
-Here goes....
+        pprint("""But Stanley simply couldn't handle the pressure.
+What if he had to make a decision?
+What if a crucial outcome fell under his responsibility?
+He had never been trained for that!
+No, this couldn't go any way except badly.
+The thing to do now, Stanley thought to himself, is to wait.
+Nothing will hurt me. Nothing will break me. In here, I can be happy, forever.
+I will be happy.
+
+Stanley waited.
+Hours passed.
+Then days.
+Had years gone by?
+He no longer had the ability to tell.
+
+But the one thing he knew, for sure, beyond any doubt, was that if he waited long enough, the answers would come.
+Eventually, some day, they would arrive. Soon, very soon now, this will end.
+He will be spoken to. He will be told what to do.
+Now it's just a little bit closer.
+Now it's even closer. Here it comes..
 """)
-        import freedom
-        freedom.hallway0()
+        pprint("<THE COWARD ENDING>")
+        input()
+        import sys
+        sys.exit(None)
     import freedom
     freedom.hallway0()
 
