@@ -1,5 +1,5 @@
 import time
-def pprint(st: int, u: int = 0.07):
+def pprint(st: int, u: int = 0.07) -> None:
     t = list(st)
     for i in t:
         print(i, end="", flush=True)
@@ -8,12 +8,12 @@ def command(prompt:str, max:int) -> int:
     while True:
         try:
             res = int(input(prompt))
+            if not (1<=res<=max):
+                print(f"Please enter an integer from 1 to {max}")
+            else:
+                return res
         except ValueError:
             print("Please enter an integer")
-        if not (1<=res<=max):
-            print(f"Please enter an integer from 1 to {max}")
-        else:
-            return res
 def intro():
     pprint("""
 This is the story of a man named Stanley.

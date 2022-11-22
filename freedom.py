@@ -80,7 +80,7 @@ Do you:
 1. Go through the left door
 2. Go through the right door
 """)
-    stdin = command("> ", 2))
+    stdin = command("> ", 2)
     if stdin == 1:
         import leftdoor
         leftdoor.hallway1()
